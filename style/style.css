@@ -96,9 +96,9 @@ header .container {
     display: none;
     position: absolute;
     top: 100%;
-    right: 0;
+    right: -74px;
     background: #fff;
-    width: 100%;
+    width: 135px;
     padding: 10px 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 999;
@@ -110,7 +110,7 @@ header .container {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .mobile-nav ul li a {
@@ -173,7 +173,7 @@ header .container {
 
 .container .left-side p.welcome {
     color: #3D3D3D;
-    font-size: 1.2vw;
+    font-size: 20px;
     font-family: 'Cera Pro', sans-serif;
     font-weight: 700;
 }
@@ -395,7 +395,7 @@ header .container {
     }
     
     .top_news {
-        justify-content: space-between;
+        justify-content: center;
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
@@ -754,6 +754,9 @@ header .container {
 }
 
 @media (max-width: 992px) {
+    header {
+        padding: 10px;
+    }
     nav.desktop-menu {
         display: none;
     }
@@ -778,7 +781,7 @@ header .container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         max-width: none;
     }
 }
@@ -855,6 +858,7 @@ header .container {
         margin-bottom: 20px;
         text-align: center;
         padding-left: 0;
+        display: flow-root;
     }
 
     .footer_mid {
@@ -863,14 +867,16 @@ header .container {
         align-items: center;
     }
     .footer_mid img {
-        width: 50%;
+        width: 215px;
+    }
+    .footer_mid p {
+        padding-left: 0;
     }
 
     .footer_down {
         flex-direction: column;
         gap: 20px;
         padding: 33px 20px;
-        align-items: center;
     }
 
     .menu1,
@@ -881,5 +887,16 @@ header .container {
 
     .footer_down ul {
         font-size: 16px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .post {
+        justify-content: space-around;
+    }
+    .footer_mid p {
+        padding-left: 0;
+    }
+    .icons {
+        justify-content: flex-start;
     }
 }
